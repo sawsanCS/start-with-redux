@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+a simple page that includes two buttons increment and decrement, and a logged in state that switches on click between false and true using redux and react-redux.
+Good to understand the structure of redux.
 
 ## Available Scripts
 
