@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createStore } from "redux";
 import allReducers from "./reducers";
-import Provider from "react-redux";
+import { Provider } from "react-redux";
 //STORE ==> GLOBALIZED STATE
 
 //REDUCER
