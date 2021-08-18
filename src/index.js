@@ -5,12 +5,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createStore } from "redux";
 import allReducers from "./reducers";
-
+import Provider from "react-redux";
 //STORE ==> GLOBALIZED STATE
 
 //REDUCER
 
-const store = createStore(
+const myStore = createStore(
   allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
@@ -19,9 +19,11 @@ const store = createStore(
 //DISPATCH ==> EXECUTE ACTION
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={myStore}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById("root")
 );
 
